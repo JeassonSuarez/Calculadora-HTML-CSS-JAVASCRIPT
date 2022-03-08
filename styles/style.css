@@ -6,6 +6,12 @@
     --primer-color-sombra-DelReset: rgb(112, 117, 153);
     --primer-color-sombra-igual:rgb(151, 0, 0);
     --primer-color-letras: rgb(255, 255, 255);
+    --color-letraBtn: rgb(90, 101, 153);
+    --color-DR: rgb(90, 101, 153);
+    --color-panel: rgb(41, 49, 92);
+    --color-btnNumeros: rgb(255, 255, 255);
+    --color-letraIgual: rgb(255, 255, 255);
+    --color-letraDRI: rgb(255, 255, 255);
 }
 
 .attribution{
@@ -27,9 +33,10 @@ button{
     width: 80%;
     height: 80%;
     border-radius: 10px;
-    color: var(--primer-color-fondo);
+    color: var(--color-letraBtn);
     box-shadow: 1px 3px 1px var(--primer-color-sombra-numeros);
     margin: 10px;
+    background-color: var(--color-btnNumeros);
 }
 
 #contenido{
@@ -99,7 +106,7 @@ button{
 
 #contenido__div--panel{
     margin: 15px;
-    background-color: var(--primer-color-secundario);
+    background-color: var(--color-panel);
     text-align:right;
     padding: 15px;
     border-radius: 10px;
@@ -134,15 +141,26 @@ button{
 }
 
 .contenido__button--resetear, .contenido__button--eliminar{
-    background-color: var(--primer-color-fondo);
+    background-color: var(--color-DR);
     box-shadow: 1px 3px 1px var(--primer-color-sombra-DelReset);
-    color: var(--primer-color-letras);
+    color: var(--color-letraDRI);
 }
 
 .contenido__button--igual{
     width: 90%;
     background-color:var(--Primer-color-igual);
     box-shadow: 1px 3px 1px var(--primer-color-sombra-igual);
-    color: var(--primer-color-letras);
+    color: var(--color-letraIgual);
 }
 
+.contenido__div--btnTema{
+    transition: all 0.5s;
+}
+
+.contenido__div--btnTemaTraslate100{
+    transform: translateX(100%);
+}
+
+.contenido__div--btnTemaTraslate180{
+    transform: translateX(185%);
+}
